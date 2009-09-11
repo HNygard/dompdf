@@ -1,13 +1,6 @@
 dompdf - PHP5 HTML to PDF converter
 ===================================
 
-http://www.digitaljunkies.ca/dompdf
-Copyright (c) 2004-2005 Benj Carson
-R&OS PDF class (class.pdf.php) Copyright (c) 2001-04 Wayne Munro
-
-Send bug reports, patches, feature requests, complaints & hate mail (no spam
-thanks) to <benjcarson@digitaljunkies.ca>
-
 ##### See INSTALL for installation instructions. #####
 
 
@@ -165,7 +158,7 @@ templating engine like Smarty, you can simply do:
 
 <?php
 $tmpfile = tempnam("/tmp", "dompdf_");
-file_put_contents($tmp_file, $smarty->fetch());
+file_put_contents($tmpfile, $smarty->fetch());
 
 $url = "dompdf.php?input_file=" . rawurlencode($tmpfile) . 
        "&paper=letter&output_file=" . rawurlencode("My Fancy PDF.pdf");
@@ -223,13 +216,6 @@ $ php -f dompdf.php -- -b /var/www/ ./web_stuff/index.html
 $ echo '<html><body>Hello world!</body>' | php -f dompdf.php -- -
 
 
-Using the dompdf class directly:
-
-See the API documentation for the interface definition.  The API
-documentation is available at http://www.digitaljunkies.ca/dompdf/.  
-
-
-
 Inline PHP Support
 ------------------
 
@@ -266,8 +252,3 @@ include/cpdf_adapter.cls.php and include/canvas.cls.php directly, or check
 out the online documentation at http://www.digitaljunkies.ca/dompdf/doc
 
 That's it!  Have fun!
-
-
-Send questions, problems, bug reports, etc to:
-
-Benj Carson <benjcarson@digitaljunkies.ca>
