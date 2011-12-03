@@ -1,0 +1,3 @@
+[submodule "dompdf/lib/php-font-lib"]
+	path = dompdf/lib/php-font-lib
+	url = git://github.com/HNygard/php-font-lib.git
